@@ -6,6 +6,8 @@ class Produto {
 
   Produto(this.nome, this.valor, this.validade);
 }
+//listando os produtoso com (Nome, preço, Data de Validade)
+//A data de validade deverá ser por formato ISO (yyyy/mm/dd)
 void main() {
   List<Produto> listaDeProdutos = [
     Produto('Arroz', 20.0, DateTime(2024, 10, 1)),
@@ -27,7 +29,7 @@ void main() {
   print('Digite seu saldo:');
   double saldo = double.parse(stdin.readLineSync()!);
 //Quantidade de produtos a ser realizado o pedido
-//Necessário que seja um valor númerico
+//Necessário que seja um valor númerico decimal
   print('Quantos itens você quer comprar ?');
 
   int quantidadeItens = int.parse(stdin.readLineSync()!);
